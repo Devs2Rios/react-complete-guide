@@ -6,6 +6,9 @@
   font-size: 3rem;
   border: none;
   transition: all ease 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .active {
