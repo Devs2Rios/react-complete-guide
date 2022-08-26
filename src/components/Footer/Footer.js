@@ -5,9 +5,9 @@ import { useState, useEffect } from 'react';
 export default function Footer(props) {
   // Date setup
   const options = {
-    day: 'numeric',
-    month: 'long',
-    year: 'numeric',
+    day: '2-digit',
+    month: '2-digit',
+    year: '2-digit',
     hour: '2-digit',
     minute: '2-digit',
     second: '2-digit',
@@ -32,11 +32,10 @@ export default function Footer(props) {
   // Component
   return (
     <footer>
-      {`Created by `}
       <a href={props.creator.url} target='blank'>
-        {props.creator.nme}
+        {`${props.creator.nme}`.toUpperCase()}
       </a>
-      {` - ${date}`}
+      <span>{date}</span>
     </footer>
   );
 }

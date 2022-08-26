@@ -21,6 +21,8 @@
   border: 2px solid var(--accent);
 }
 
-.game-button:hover {
-  background-color: var(--white);
+@media (hover: hover) {
+  .game-button.active:hover {
+    background-color: var(--white);
+  }
 }
