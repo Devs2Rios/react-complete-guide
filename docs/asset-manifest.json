@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/react-complete-guide/static/css/main.23fd5771.css",
-    "main.js": "/react-complete-guide/static/js/main.8dc6bf23.js",
-    "static/js/787.2726c4d0.chunk.js": "/react-complete-guide/static/js/787.2726c4d0.chunk.js",
-    "index.html": "/react-complete-guide/index.html",
-    "main.23fd5771.css.map": "/react-complete-guide/static/css/main.23fd5771.css.map",
-    "main.8dc6bf23.js.map": "/react-complete-guide/static/js/main.8dc6bf23.js.map",
-    "787.2726c4d0.chunk.js.map": "/react-complete-guide/static/js/787.2726c4d0.chunk.js.map"
+    "main.css": "/react-playing-patio/static/css/main.23fd5771.css",
+    "main.js": "/react-playing-patio/static/js/main.f4d636cd.js",
+    "static/js/787.fa0628e0.chunk.js": "/react-playing-patio/static/js/787.fa0628e0.chunk.js",
+    "index.html": "/react-playing-patio/index.html",
+    "main.23fd5771.css.map": "/react-playing-patio/static/css/main.23fd5771.css.map",
+    "main.f4d636cd.js.map": "/react-playing-patio/static/js/main.f4d636cd.js.map",
+    "787.fa0628e0.chunk.js.map": "/react-playing-patio/static/js/787.fa0628e0.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.23fd5771.css",
-    "static/js/main.8dc6bf23.js"
+    "static/js/main.f4d636cd.js"
   ]
 }

@@ -1,7 +1,7 @@
 {
-  "name": "react-complete-guide",
+  "name": "react-playing-patio",
   "version": "0.1.0",
-  "homepage": "https://devs2rios.github.io/react-complete-guide/",
+  "homepage": "https://devs2rios.github.io/react-playing-patio/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
