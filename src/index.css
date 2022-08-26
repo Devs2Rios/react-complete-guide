@@ -1,4 +1,65 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+/* Global Variables */
+:root {
+  --white: rgb(222, 222, 222);
+  --black: #141414;
+  --accent: rgb(127, 255, 212);
+}
+/* Main elements styling */
+/* Containers */
+* {
+  box-sizing: border-box;
+}
+html,
 body {
-  margin: 0;
-  font-family: sans-serif;
+  font-family: 'IBM Plex Sans', sans-serif;
+  text-align: center;
+  color: var(--white);
+}
+body {
+  background-color: var(--black);
+}
+/* Headers */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 900;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2.5rem;
+}
+h3 {
+  font-size: 2rem;
+}
+h4 {
+  font-size: 1.5rem;
+}
+h5 {
+  font-size: 1rem;
+}
+h6 {
+  font-size: 0.5rem;
+}
+/* Body Text */
+p,
+a {
+  font-size: 1rem;
+}
+
+a {
+  color: var(--accent);
+  font-style: italic;
+  transition: all ease 0.5s;
+}
+a:hover {
+  font-weight: 600;
 }

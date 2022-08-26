@@ -1,11 +1,11 @@
 import './App.css';
+import Footer from '../Footer/Footer';
 
-function App() {
+export default function App() {
   return (
     <div className='App'>
       <h1>React Complete Guide</h1>
+      <Footer />
     </div>
   );
 }
-
-export default App;
