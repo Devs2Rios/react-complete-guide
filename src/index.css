@@ -23,11 +23,11 @@ body {
 
 main {
   display: flex;
-  width: 100%;
+  width: 100vw;
   flex-direction: column;
-  gap: 2rem;
+  padding: 3rem 3rem 4rem 3rem;
   border-top: 1px solid var(--accent);
-  padding: 1rem 2rem;
+  gap: 2rem;
 }
 /* Headers */
 h1,

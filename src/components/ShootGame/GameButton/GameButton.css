@@ -1,0 +1,23 @@
+.game-button {
+  cursor: crosshair;
+  height: 6rem;
+  width: 6rem;
+  border-radius: 100%;
+  font-size: 3rem;
+  border: none;
+  transition: all ease 0.5s;
+}
+
+.active {
+  background-color: var(--accent);
+  border: none;
+}
+
+.inactive {
+  background-color: var(--black);
+  border: 2px solid var(--accent);
+}
+
+.game-button:hover {
+  background-color: var(--white);
+}

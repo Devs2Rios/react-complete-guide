@@ -1,23 +1,8 @@
 .App {
-  height: 100vh;
+  min-height: 100vh;
   padding: 2rem 2rem 4rem 2rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-}
-
-.container {
-  display: flex;
-  width: 100%;
-  min-height: 5rem;
-  gap: 1rem;
-  justify-content: stretch;
-  align-items: stretch;
-}
-
-@media screen and (max-width: 600px) {
-  .container {
-    flex-direction: column;
-  }
 }

@@ -1,0 +1,9 @@
+.game {
+  width: 100vw;
+  flex-direction: column;
+  padding: 3rem 3rem 4rem 3rem;
+  gap: 3rem;
+  align-items: center;
+  border-top: 1px solid var(--accent);
+  margin-top: 4rem;
+}
