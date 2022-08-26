@@ -20,6 +20,15 @@ body {
 body {
   background-color: var(--black);
 }
+
+main {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 2rem;
+  border-top: 1px solid var(--accent);
+  padding: 1rem 2rem;
+}
 /* Headers */
 h1,
 h2,
@@ -51,7 +60,9 @@ h6 {
 }
 /* Body Text */
 p,
-a {
+a,
+header,
+footer {
   font-size: 1rem;
 }
 
@@ -61,5 +72,13 @@ a {
   transition: all ease 0.5s;
 }
 a:hover {
+  font-weight: 600;
+}
+
+em {
+  font-style: italic;
+}
+
+strong {
   font-weight: 600;
 }
