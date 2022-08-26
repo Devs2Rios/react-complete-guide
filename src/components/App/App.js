@@ -16,7 +16,7 @@ export default function App() {
   return (
     <div className='App'>
       <header>
-        <h1>{appTitle}</h1>
+        <h1 style={{ padding: '2rem 2rem 0 2rem' }}>{appTitle}</h1>
         <ShootGame />
       </header>
       <main>
