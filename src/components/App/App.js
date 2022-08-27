@@ -3,6 +3,7 @@ import Footer from '../Footer/Footer';
 import Member from '../Member/Member';
 import Container from '../Container/Container';
 import ShootGame from '../ShootGame/ShootGame';
+import LanguageForm from '../LanguageForm/LanguageForm';
 
 export default function App() {
   const members = {
@@ -10,7 +11,7 @@ export default function App() {
     pedro: { nme: 'Pedro Ortíz', handle: '@Portizhead' },
   };
   const creator = { nme: 'Devs2Rios', url: 'https://github.com/Devs2Rios' };
-  const appTitle = 'React Playing Patio';
+  const appTitle = '⚛ React Playing Patio ⚛';
   document.title = `${creator.nme} - ${appTitle}`;
 
   return (
@@ -20,6 +21,7 @@ export default function App() {
         <ShootGame />
       </header>
       <main>
+        <LanguageForm />
         <h2>Members</h2>
         <Container>
           {Object.values(members).map(member => (

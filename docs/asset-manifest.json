@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/react-playing-patio/static/css/main.23fd5771.css",
-    "main.js": "/react-playing-patio/static/js/main.66ee2715.js",
+    "main.css": "/react-playing-patio/static/css/main.d81542f6.css",
+    "main.js": "/react-playing-patio/static/js/main.13cdbe3e.js",
     "static/js/787.fa0628e0.chunk.js": "/react-playing-patio/static/js/787.fa0628e0.chunk.js",
     "index.html": "/react-playing-patio/index.html",
-    "main.23fd5771.css.map": "/react-playing-patio/static/css/main.23fd5771.css.map",
-    "main.66ee2715.js.map": "/react-playing-patio/static/js/main.66ee2715.js.map",
+    "main.d81542f6.css.map": "/react-playing-patio/static/css/main.d81542f6.css.map",
+    "main.13cdbe3e.js.map": "/react-playing-patio/static/js/main.13cdbe3e.js.map",
     "787.fa0628e0.chunk.js.map": "/react-playing-patio/static/js/787.fa0628e0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.23fd5771.css",
-    "static/js/main.66ee2715.js"
+    "static/css/main.d81542f6.css",
+    "static/js/main.13cdbe3e.js"
   ]
 }

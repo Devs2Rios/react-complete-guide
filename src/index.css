@@ -8,8 +8,11 @@
 }
 /* Main elements styling */
 /* Containers */
-* {
+*,
+*:before,
+*:after {
   box-sizing: border-box;
+  transition: all ease 0.25s;
 }
 html,
 body {
@@ -35,7 +38,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+legend {
   font-weight: 900;
   text-transform: uppercase;
   color: var(--accent);
@@ -71,7 +75,7 @@ a {
   font-style: italic;
   transition: all ease 0.5s;
 }
-a:hover {
+a:active {
   font-weight: 600;
 }
 
@@ -81,4 +85,82 @@ em {
 
 strong {
   font-weight: 600;
+}
+
+form {
+  background-color: var(--accent);
+  color: var(--black);
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  gap: 1rem;
+  padding: 2rem 2rem 2.5rem 2rem;
+}
+
+legend {
+  color: var(--black);
+  font-size: 1.5rem;
+}
+
+label {
+  padding: 0.5rem;
+}
+
+input {
+  font-family: 'IBM Plex Sans', sans-serif;
+  border: none;
+  padding: 0.5rem;
+  text-transform: uppercase;
+}
+
+input[type='radio'] {
+  -webkit-appearance: none;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 100%;
+  background-color: var(--black);
+  outline: none;
+  cursor: pointer;
+  transition: all ease 0.5s;
+}
+input[type='radio']:after {
+  background-color: var(--white);
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 100%;
+  content: '';
+  display: block;
+  position: relative;
+  bottom: calc(0.5rem / 2);
+  right: calc(0.5rem / 2);
+}
+input[type='radio']:checked:after {
+  background-color: var(--black);
+}
+
+input[type='submit'] {
+  background-color: var(--black);
+  color: var(--white);
+  font-weight: 600;
+  transition: all ease 0.25s;
+  align-self: center;
+  border-radius: 10px;
+}
+
+input[type='submit']:active {
+  transform: scale(1.1);
+}
+
+@media (hover: hover) {
+  a:hover {
+    font-weight: 600;
+  }
+  input[type='submit']:hover {
+    cursor: pointer;
+    background-color: var(--white);
+    color: var(--black);
+  }
+  input[type='radio']:hover {
+    transform: scale(1.1);
+  }
 }

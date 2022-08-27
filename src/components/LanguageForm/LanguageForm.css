@@ -1,0 +1,41 @@
+.radio-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 2px solid var(--black);
+}
+
+.radio-el {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, var(--accent), var(--white));
+}
+
+.fav-lang-title {
+  padding-bottom: 2rem;
+  border-bottom: 2px solid var(--black);
+}
+
+@media screen and (max-width: 600px) {
+  .radio-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .radio-el {
+    width: 80%;
+    align-items: space-around;
+  }
+  .radio-el input {
+    justify-self: flex-end;
+    flex-grow: 0;
+  }
+  .radio-el label {
+    text-align: left;
+    flex-grow: 2;
+  }
+}
