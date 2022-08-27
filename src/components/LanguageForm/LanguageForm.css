@@ -9,15 +9,23 @@
 }
 
 .radio-el {
+  padding: 0.25rem 0.45rem 0.35rem 0.25rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(to right, var(--accent), var(--white));
+  border: 2px solid var(--black);
+  border-radius: 10px;
 }
 
 .fav-lang-title {
   padding-bottom: 2rem;
   border-bottom: 2px solid var(--black);
+}
+
+@media (hover: hover) {
+  .radio-el:hover {
+    font-weight: 600;
+  }
 }
 
 @media screen and (max-width: 600px) {

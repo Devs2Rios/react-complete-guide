@@ -16,9 +16,9 @@ export default function ShootButton() {
     const rEmoji = emojis[Math.round(Math.random() * (emojis.length - 1))];
     if (game.playing && game.emoji !== '💎') {
       setGame({
+        ...game,
         emoji: rEmoji,
         msg: 'Shoot until you find the 💎',
-        playing: true,
       });
       if (rEmoji === '💎') {
         setGame({ emoji: rEmoji, msg: "You're rich now!", playing: false });

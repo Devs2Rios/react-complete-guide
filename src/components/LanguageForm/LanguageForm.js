@@ -26,7 +26,6 @@ export default function LanguageForm() {
     e.preventDefault();
     const el = e.target,
       lang = langs.find(lang => lang.submit === el.value);
-
     document.documentElement.style.setProperty('--accent', lang.color);
     document.getElementById('lang-flag').textContent = lang.flag;
     el.parentElement.reset();
