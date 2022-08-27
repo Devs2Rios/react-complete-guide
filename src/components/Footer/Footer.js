@@ -12,14 +12,9 @@ export default function Footer(props) {
     minute: '2-digit',
     second: '2-digit',
   };
-  // User browser localization
-  const userLocale =
-    navigator.languages && navigator.languages.length
-      ? navigator.languages[0]
-      : navigator.language;
   // Date updater function
   const updateDate = date =>
-    new Intl.DateTimeFormat(userLocale, options).format(new Date());
+    new Intl.DateTimeFormat(props.locl, options).format(new Date());
   // State
   const [date, setDate] = useState(updateDate);
   // Date live update

@@ -3,10 +3,11 @@ import { useState } from 'react';
 import Container from '../Container/Container';
 import GameButton from './GameButton/GameButton';
 
-export default function ShootButton() {
+export default function ShootGame(props) {
+  // Preset
   const preset = {
     emoji: '🔫',
-    msg: 'Shoot by clicking the 🔫',
+    msg: 0,
     playing: true,
   };
   const [game, setGame] = useState({ ...preset });
@@ -15,13 +16,13 @@ export default function ShootButton() {
     const emojis = [...'🔫💣🧨🪓🔪🗡🥊🏴💎'];
     const rEmoji = emojis[Math.round(Math.random() * (emojis.length - 1))];
     if (game.playing && game.emoji !== '💎') {
-      setGame({
-        ...game,
+      setGame(prevState => ({
+        ...prevState,
         emoji: rEmoji,
-        msg: 'Shoot until you find the 💎',
-      });
+        msg: 1,
+      }));
       if (rEmoji === '💎') {
-        setGame({ emoji: rEmoji, msg: "You're rich now!", playing: false });
+        setGame({ emoji: rEmoji, msg: 2, playing: false });
       }
     }
   };
@@ -33,7 +34,7 @@ export default function ShootButton() {
   };
   return (
     <Container className='game'>
-      <h3 className='game-message'>{game.msg}</h3>
+      <h3 className='game-message'>{props.quotes[game.msg]}</h3>
       <Container>
         <GameButton active={game.playing} action={shoot} text={game.emoji} />
         <GameButton active={!game.playing} action={again} text='🔄' />

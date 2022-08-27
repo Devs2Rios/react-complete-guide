@@ -22,6 +22,10 @@
   border-bottom: 2px solid var(--black);
 }
 
+#lang-flag {
+  font-size: 2rem;
+}
+
 @media (hover: hover) {
   .radio-el:hover {
     font-weight: 600;

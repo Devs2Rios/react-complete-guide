@@ -145,6 +145,7 @@ input[type='submit'] {
   transition: all ease 0.25s;
   align-self: center;
   border-radius: 10px;
+  padding: 1rem 2rem;
 }
 
 input[type='submit']:active {
